@@ -4,11 +4,11 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import Clock from "./Clock";
+import Toggle from "./Toggle";
 
 ReactDOM.render(
-    <Clock />,
+    <Toggle />,
     document.getElementById('root')
 );
 
-// setInterval(Clock, 1000);
 registerServiceWorker();
