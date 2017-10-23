@@ -5,9 +5,10 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import Clock from "./Clock";
 import Toggle from "./Toggle";
+import LoginControl from "./LoginControl";
 
 ReactDOM.render(
-    <Toggle />,
+    <LoginControl />,
     document.getElementById('root')
 );
 
