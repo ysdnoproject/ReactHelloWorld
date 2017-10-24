@@ -6,9 +6,10 @@ import registerServiceWorker from './registerServiceWorker';
 import Clock from "./Clock";
 import Toggle from "./Toggle";
 import LoginControl from "./LoginControl";
+import Calculator from "./temperature_calculator/Calculator";
 
 ReactDOM.render(
-    <LoginControl />,
+    <Calculator />,
     document.getElementById('root')
 );
 
