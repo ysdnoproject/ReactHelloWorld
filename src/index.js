@@ -7,9 +7,11 @@ import Clock from "./Clock";
 import Toggle from "./Toggle";
 import LoginControl from "./LoginControl";
 import Calculator from "./temperature_calculator/Calculator";
+import FilterableProductTable from "./flterable_product_table/FilterableProductTable";
+import PRODUCTS from "./flterable_product_table/dummy_data";
 
 ReactDOM.render(
-    <Calculator />,
+    <FilterableProductTable products={PRODUCTS} />,
     document.getElementById('root')
 );
 
