@@ -1,0 +1,8 @@
+交互性强的应用使用起来很方便。
+但是使用回调很麻烦。需要在下方回调上方的方法来设置state。（例如SearchBar要回调FilterableProductTable的方法）
+组件化之后可以方便复用
+对于常见的条件过滤需要组件包来处理（应该已经有了吧）
+对于state应该存放的key值的选择需要多加思考。（一般应该是放条件而非过滤之后的结果）
+state存放的原则是Lifting State Up（存放在共同的调用其组件的类里面，如果没有可以考虑添加一个专门的类来存放state并且引入其他组件）
+组件比继承更具有优势
+handleEventMethod 需要bind(this)
