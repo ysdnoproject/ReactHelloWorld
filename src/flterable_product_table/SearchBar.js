@@ -4,7 +4,7 @@ class SearchBar extends React.Component {
     constructor(props) {
         super(props);
         this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
-        this.handleInStockChange = this.handleInStockChange.bind(this);
+     //   this.handleInStockChange = this.handleInStockChange.bind(this);
     }
 
     handleFilterTextChange(e) {
@@ -24,7 +24,7 @@ class SearchBar extends React.Component {
                 <p>
                     <input type="checkbox"
                            checked={this.props.inStockOnly}
-                           onChange={this.handleInStockChange}/>
+                           onChange={(e) => this.handleInStockChange(e)}/>
                     {' '}
                     Only show products in stock
                 </p>

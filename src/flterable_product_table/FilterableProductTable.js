@@ -8,7 +8,7 @@ class FilterableProductTable extends React.Component {
         this.state = {filterText: '', inStockOnly: false};
 
         this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
-        this.handleInStockChange = this.handleInStockChange.bind(this);
+     //   this.handleInStockChange = this.handleInStockChange.bind(this);
     }
 
     handleFilterTextChange(filterText) {
@@ -30,7 +30,7 @@ class FilterableProductTable extends React.Component {
                     filterText={this.state.filterText}
                     inStockOnly={this.state.inStockOnly}
                     onFilterTextChange={this.handleFilterTextChange}
-                    onInStockChange={this.handleInStockChange}
+                    onInStockChange={(inStockOnly) => this.handleInStockChange(inStockOnly)}
                 />
                 <ProductTable
                     products={this.props.products}
