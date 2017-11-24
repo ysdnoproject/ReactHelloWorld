@@ -5,4 +5,10 @@
 对于state应该存放的key值的选择需要多加思考。（一般应该是放条件而非过滤之后的结果）
 state存放的原则是Lifting State Up（存放在共同的调用其组件的类里面，如果没有可以考虑添加一个专门的类来存放state并且引入其他组件）
 组件比继承更具有优势
-handleEventMethod 需要bind(this)
+handleEventMethod 需要bind(this)(https://reactjs.org/docs/react-without-es6.html):
+	If you’d rather play it safe, you have a few options:
+		*Bind methods in the constructor.
+		*Use arrow functions, e.g. onClick={(e) => this.handleClick(e)}.
+		*Keep using createReactClass.
+个人认为arrow function比较好。需要code的代码比较少。（可以参考commit  685803529b1e9ac46db185399acca40b078d9e61
+
