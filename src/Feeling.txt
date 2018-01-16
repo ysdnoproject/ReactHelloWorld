@@ -11,4 +11,11 @@ handleEventMethod 需要bind(this)(https://reactjs.org/docs/react-without-es6.ht
 		*Use arrow functions, e.g. onClick={(e) => this.handleClick(e)}.
 		*Keep using createReactClass.
 个人认为arrow function比较好。需要code的代码比较少。（可以参考commit  685803529b1e9ac46db185399acca40b078d9e61
-
+业务逻辑有一部分放在了前台，是不是有点问题（比如if条件判断什么的。还会暴露一部分在数据库里面的值）
+真的用得到这么复杂的框架么？感觉现在为止的项目还用不到这样的。
+后台用什么
+怎么交互
+form怎么办
+怎么验证
+为什么那么喜欢用const
+ Don’t try to synchronize states of two different components. Instead, lift it up to their closest shared ancestor, and pass it down as props to both of them.
